@@ -26,13 +26,14 @@
       <a class="icono-barra" href="index.html"><i class="fas fa-minus-circle"></i></a>
       <p class="productos-comprados"><span class="numerador">2</span>/<span class="denominador">3</span> comprados</p>
     </header>
-    <section>
+    <section class="main-container editar-articulo">
+      <h2>Editar artículo</h2>
       <form>
-        <label for="nombre">Nombre:</label>
+        <label class="indicador" for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
-        <label for="precio">Precio:</label>
-        <input type="number" id="precio" name="precio"><span>€</span>
-        <input type="submit" value="Modificar">
+        <label class="indicador" for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio"><span class="euro">€</span>
+        <input class="indicador" type="submit" value="Modificar">
       </form>
     </section>
   </main>
