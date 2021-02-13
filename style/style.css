@@ -23,11 +23,18 @@ h1 {
   font-weight: bold;
 }
 .cabecera {
-  padding: 30px 15px 30px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header-links li:hover {
     text-decoration: underline;
+}
+.barra-informativa {
+  display: flex;
+  flex-direction: row;
+}
+.icono-barra {
+  flex-grow: 1;
+  color: black;
 }
