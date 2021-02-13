@@ -3,6 +3,9 @@
   flex-direction: row;
 }
 .icono-barra {
-  flex-grow: 1;
   color: black;
+}
+.productos-comprados {
+  margin:0;
+  margin-left: auto;
 }
