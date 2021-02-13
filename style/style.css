@@ -1,0 +1,8 @@
+.barra-informativa {
+  display: flex;
+  flex-direction: row;
+}
+.icono-barra {
+  flex-grow: 1;
+  color: black;
+}
