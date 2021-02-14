@@ -31,7 +31,7 @@ h2 {
   list-style-type: none;
   display: inline;
 }
-.header-links li:nth-child(2) {
+.menu-item {
   font-weight: bold;
 }
 .header-links li:hover {
