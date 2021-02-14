@@ -41,6 +41,7 @@ h2 {
   padding: 10px 10px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: #f87500;
 }
 .icono-barra {
