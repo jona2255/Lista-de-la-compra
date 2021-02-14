@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 .cabecera {
-  padding: 20px 10px;
+  padding: 50px 14px 50px 23px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +25,10 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 38px;
+  padding-bottom: 10px;
 }
 .header-links li {
+  padding: 0 7px;
   font-size: x-large;
   list-style-type: none;
   display: inline;
@@ -38,11 +40,13 @@ h2 {
   text-decoration: underline;
 }
 .barra-informativa {
-  padding: 10px 10px;
+  padding: 18px 21px 18px 23px;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #f87500;
+  border-top: 2px solid #c5760eb6;
+  border-bottom: 2px solid #c5760eb6;
 }
 .icono-barra {
   font-size: xxx-large;
@@ -55,19 +59,21 @@ h2 {
 .main-container {
   display: flex;
   flex-direction: column;
-  padding: 10px 10px;
+  padding: 30px 21px 30px 23px;
 }
 .lista-productos ul {
   font-size: 30px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #bdbdbce8;
 }
 .lista-productos .fila-producto {
+  padding: 9px 0 9px 9px; /* padding para que aún con el scale de los checkbox siga todo alineado */
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .lista-productos .producto {
-  padding: 0 5px;
+  padding: 0 22px;
   font-size: 30px;
 }
 .lista-productos .precio {
@@ -75,27 +81,42 @@ h2 {
   margin-left: auto;
 }
 .lista-productos #icono-producto {
-  padding-left: 10px;
+  padding-left: 35px;
 }
 .lista-productos .total {
-  padding: 5px 0;
+  padding: 18px 0;
   font-size: xx-large;
 }
-
-.lista-productos .pan, .lista-productos .leche {
+.lista-productos .pan, .leche {
   text-decoration: line-through;
+}
+.lista-productos #pan, #azucar, #leche {
+  -ms-transform: scale(2.2); /* IE */
+  -moz-transform: scale(2.2); /* FF */
+  -webkit-transform: scale(2.2); /* Safari and Chrome */
+  -o-transform: scale(2.2); /* Opera */
+  transform: scale(2.2);
+}
+.editar-articulo {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 23px;
 }
 .editar-articulo .indicador {
   font-size: x-large;
   display: block;
-  padding: 12px 0 7px 0;
+  padding: 5px 0 14px 0;
 }
 .editar-articulo .input {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 21px 4px;
+  margin-bottom: 12px;
+  border: 0;
+  width: 300px;
 }
 .editar-articulo .euro {
   font-size: x-large;
-  padding-left: 3px;
+  padding-left: 6px;
 }
 .fila-producto:hover{
   background-color: #c16b1e;
@@ -103,10 +124,11 @@ h2 {
   color: white;
 }
 .editar-articulo .modificar {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
   font-size: x-large;
   display: block;
-  padding: 8px 4px;
+  padding: 14px 7px;
   margin-top: 18px; /* Uso margin porque padding modificaría el bloque que encierra "Modificar" */
   background-color: #5e81d1;
   border: 0;
