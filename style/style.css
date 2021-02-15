@@ -14,7 +14,6 @@ a {
 .cabecera {
   padding: 50px 14px 50px 23px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #5e81d1;
 }
@@ -26,6 +25,9 @@ h2 {
   font-weight: bold;
   font-size: 38px;
   padding-bottom: 10px;
+}
+.header-links {
+  margin: 0 0 0 auto;
 }
 .header-links li {
   padding: 0 7px;
